@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أمجد مزيان - Video editor</title>
+  <meta name="description" content="معرض أعمال أمجد مزيان، مونتير فيديو. أعمال مع شرح كيف أنجزت كل عمل.">
+  <meta property="og:title" content="أمجد مزيان - Video editor">
+  <meta property="og:description" content="معرض أعمال مونتاج الفيديو.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#top">My Portfolio</a>
+      <nav class="nav" aria-label="التنقل">
+        <a href="#works">الأعمال</a>
+        <a href="#tools">الأدوات</a>
+        <a href="#contact">التواصل</a>
+        <button class="theme-btn" id="theme-btn" type="button">الوضع الفاتح</button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- الواجهة: غيّر النص هنا، وبدّل الصور في assets/images -->
+      <div class="hero">
+        <div>
+          <h1><span class="name">أنا أمجد مزيان</span><span class="role">Video editor</span></h1>
+          <p class="lead">وهنا راح تستكشفو أعمالي.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#works">شاهد الأعمال</a>
+            <a class="btn" href="#contact">تواصل معي</a>
+          </div>
+        </div>
+        <div class="collage">
+          <span class="block-y" aria-hidden="true"></span>
+          <span class="frame-p" aria-hidden="true"></span>
+          <figure class="ph ph3"><img src="assets/images/photo-3.jpg" alt="أمجد مزيان من الجانب وهو يبتسم"></figure>
+          <figure class="ph ph1">
+            <img src="assets/images/photo-1.jpg" alt="أمجد مزيان يبتسم في مقهى">
+            <span class="vf" aria-hidden="true"></span>
+            <span class="rec" aria-hidden="true">REC</span>
+          </figure>
+          <figure class="ph ph2"><img src="assets/images/photo-2.jpg" alt="أمجد مزيان واقفًا بين الأشجار"></figure>
+        </div>
+      </div>
+    </main>
+
+    <!-- الأعمال: تُبنى تلقائيًا من الملف js/works-data.js -->
+    <section id="works" aria-labelledby="works-h">
+      <div class="sec-head">
+        <h2 id="works-h">الأعمال</h2>
+      </div>
+      <div id="cases"></div>
+    </section>
+
+    <!-- الأدوات: تُبنى من js/works-data.js -->
+    <section id="tools" aria-labelledby="tools-h">
+      <div class="sec-head"><h2 id="tools-h">الأدوات</h2></div>
+      <div class="tool-list" id="tools-list"></div>
+    </section>
+
+    <!-- التواصل: القيم في js/works-data.js -->
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="contact">
+        <div>
+          <h2 id="contact-h">لنعمل معًا</h2>
+          <p>أخبرني عن مشروعك ومدته وموعد التسليم، وأرد عليك بتصور واضح وسعر.</p>
+        </div>
+        <ul class="info" id="contact-list"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 meziane amdjed</span>
+      <span>مونتاج وما بعد الإنتاج (<span class="ltr">Post-production</span>)</span>
+    </footer>
+  </div>
+
+  <script src="js/works-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
